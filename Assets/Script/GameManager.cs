@@ -6,9 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public GameObject draggingObject;
     public GameObject currentContainer;
-    
-    public static GameManager instance;
 
+    public static GameManager instance;
+    
     private void Awake()
     {
         instance = this;
