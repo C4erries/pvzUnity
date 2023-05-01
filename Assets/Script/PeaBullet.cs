@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PeaBullet : MonoBehaviour
 {
     public float speed = 1f;
-    public float damage = 10f;
 
     void Update()
     {
@@ -16,11 +14,5 @@ public class PeaBullet : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-    }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        col.GetComponent<Zombie>().hp-=damage;
-        Destroy(this.gameObject);
     }
 }
