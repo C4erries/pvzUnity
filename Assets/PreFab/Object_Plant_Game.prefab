@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7329627081346294090}
   - component: {fileID: 3236020142965037439}
   - component: {fileID: 7379805523775327088}
+  - component: {fileID: 706567721980268369}
   m_Layer: 5
   m_Name: Object_Plant_Game
   m_TagString: Untagged
@@ -76,3 +77,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &706567721980268369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135083120413854738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcddaeeb20ec3d74e85f1a35aee7d765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  peaBullet: {fileID: 1235814580372444171, guid: 39797fd6a00ec434aa58534b30e921f6, type: 3}

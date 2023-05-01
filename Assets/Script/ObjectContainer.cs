@@ -14,7 +14,7 @@ public class ObjectContainer : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(gameManager.draggingObject != null && !isFull)
+        if (gameManager.draggingObject != null && !isFull)
         {
             gameManager.currentContainer = this.gameObject;
             backgroundImage.enabled = true;
@@ -23,6 +23,7 @@ public class ObjectContainer : MonoBehaviour
     public void OnTriggerExit2D(Collider2D collision)
     {
         backgroundImage.enabled = false;
+        gameManager.currentContainer = null;
 
     }
 }
