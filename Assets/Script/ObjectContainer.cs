@@ -14,7 +14,7 @@ public class ObjectContainer : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gameManager.draggingObject != null && !isFull)
+        if (gameManager.draggingObject.tag=="dragplant" && !isFull)
         {
             gameManager.currentContainer = this.gameObject;
             backgroundImage.enabled = true;

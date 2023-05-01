@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3565686642841613579}
   m_Layer: 8
   m_Name: Object_Plant_Drag
-  m_TagString: Untagged
+  m_TagString: dragplant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,3 +138,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43755542076f4ed49a215acdbb19a187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  card: {fileID: 0}
