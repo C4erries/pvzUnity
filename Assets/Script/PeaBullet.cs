@@ -18,15 +18,9 @@ public class PeaBullet : MonoBehaviour
 
     }
 
-    /*private void OnTriggerEnter2D(Collider2D col)
-    {
-        col.GetComponent<Zombie>().hp-=damage;
-        Destroy(this.gameObject);
-    }
-    */
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "zombie")
+        if (col.gameObject.CompareTag("zombie"))
         {
             Destroy(this.gameObject);
             col.gameObject.GetComponent<Zombie>().hp -= 10;
