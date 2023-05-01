@@ -59,7 +59,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1235814580372444171}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -129,4 +129,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  obj: {fileID: 6665904895386479079, guid: 3781180e279ed794491edca76de230d5, type: 3}
+  damage: 10
