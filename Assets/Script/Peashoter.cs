@@ -6,12 +6,11 @@ public class Peashoter : MonoBehaviour
 {
     public GameObject peaBullet;
     public Canvas canvas;
-    public bool enemySeen = false;
+    public bool enemySeen = true;
     void Start()
     {
         canvas = this.GetComponentInParent<Canvas>();
-        { InvokeRepeating("Shoot", 0, 2.0f); }
-        enemySeen = false;
+        { InvokeRepeating("Shoot", 0, 1.0f); }
     }
 
     // Update is called once per frame
