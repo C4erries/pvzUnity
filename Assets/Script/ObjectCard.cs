@@ -8,7 +8,7 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
 {
     public GameObject object_Drag;
     public GameObject object_Game;
-    public float cost = 100f;
+    public static float cost = 100f;
     public Canvas canvas;
     public Color bColor;
     public Color gColor;
@@ -57,7 +57,6 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
         if(sunNow >= cost)
         {
             gameManager.PlaceObject();
-            SunWallet.sunCounter -= cost;
             GameManager.instance.draggingObject = null;
             Destroy(objectDragInstance);
         }

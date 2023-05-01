@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         if (draggingObject != null && currentContainer != null)
         {
             Instantiate(draggingObject.GetComponent<ObjectDragging>().card.object_Game, currentContainer.transform);
+            SunWallet.sunCounter -= ObjectCard.cost;
             currentContainer.GetComponent<ObjectContainer>().isFull = true;
         }
     }
