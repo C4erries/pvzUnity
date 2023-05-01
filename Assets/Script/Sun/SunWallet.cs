@@ -10,10 +10,11 @@ public class SunWallet : MonoBehaviour
     void Start()
     {
         suns = GetComponent<Text>();
-        sunCounter = 150;
+        sunCounter = 0;
     }
     void Update()
     {
+        
         suns.text = "Suns: " + sunCounter.ToString();
     }
 }
