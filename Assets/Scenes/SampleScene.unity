@@ -2692,6 +2692,7 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1106709263
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +2787,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 1106709263}
   m_CullTransparentMesh: 1
 =======
+=======
+>>>>>>> 86e658494f7664159ef6cdbcf7bcfd34dd894fb7
 --- !u!1001 &1105562203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2887,6 +2890,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39797fd6a00ec434aa58534b30e921f6, type: 3}
+<<<<<<< HEAD
+>>>>>>> 86e658494f7664159ef6cdbcf7bcfd34dd894fb7
+=======
 >>>>>>> 86e658494f7664159ef6cdbcf7bcfd34dd894fb7
 --- !u!1001 &1141857043
 PrefabInstance:
