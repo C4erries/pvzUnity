@@ -6,11 +6,12 @@ public class SunManager : MonoBehaviour
 {
     public static SunManager instance;
     public GameObject sunPoint;
-    public float spawnSunInterval = 2.0f;
+    public float spawnSunInterval;
     public Canvas canvas;
     // Start is called before the first frame update
     void Start()
     {
+        spawnSunInterval = 5.0f;
         { InvokeRepeating("Deployer", 0, spawnSunInterval); }
     }
     void Awake()
