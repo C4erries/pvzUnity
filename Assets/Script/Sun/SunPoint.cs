@@ -6,14 +6,12 @@ using UnityEngine;
 public class SunPoint : MonoBehaviour
 {
     public float speed = 1f;
-    public SunManager sunManager;
     public float deadSunTimeout;
     public float point;
     private void Start()
     {
         deadSunTimeout = 10.0f;
         StartCoroutine(Counter());
-        sunManager = SunManager.instance;
     }
     private void Awake()
     {

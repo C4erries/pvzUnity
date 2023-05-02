@@ -5,11 +5,9 @@ using UnityEngine;
 public class Peashoter : MonoBehaviour
 {
     public GameObject peaBullet;
-    public Canvas canvas;
     public bool enemySeen = true;
     void Start()
     {
-        canvas = this.GetComponentInParent<Canvas>();
         { InvokeRepeating("Shoot", 0, 1.0f); }
     }
 
