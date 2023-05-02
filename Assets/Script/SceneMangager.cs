@@ -12,11 +12,11 @@ public class SceneMangager : MonoBehaviour
     void Start()
     {
         GameObject card1 = Instantiate(CardPeashooter, canvas.transform);
-        card1.tag = "Plant";
+        card1.tag = "plant";
         card1.transform.position = new Vector3(100, 400, 0);
         GameObject card2 = Instantiate(CardSunflower, canvas.transform);
         card2.transform.position = new Vector3(100, 300, 0);
-        card2.tag = "Plant";
+        card2.tag = "plant";
     }
 
     // Update is called once per frame

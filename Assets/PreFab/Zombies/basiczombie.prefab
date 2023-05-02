@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1353753617944933634}
   - component: {fileID: 5150936866902843714}
   m_Layer: 0
-  m_Name: Zombie
+  m_Name: basiczombie
   m_TagString: zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9, y: 20}
+  m_Size: {x: 11, y: 13}
   m_EdgeRadius: 0
 --- !u!222 &-8709454010107700328
 CanvasRenderer:
@@ -140,3 +140,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vel: 50
   hp: 100
+  eatcd: 0.5
