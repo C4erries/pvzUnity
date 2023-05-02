@@ -4,11 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - plant
   - zombie
+  - bullet
+  - Manager
   - bg
   - dragplant
-  - Plant
-  - Manager
+  - ui
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - UI
   - 
   - 
-  - DraggingPlant
-  - Container
-  - Bullet
+  - 
+  - 
+  - 
   - 
   - 
   - 

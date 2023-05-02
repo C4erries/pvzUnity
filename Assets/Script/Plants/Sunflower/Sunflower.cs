@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sunflower : MonoBehaviour
+public class Sunflower : mainplant
 {
     public GameObject FlowerSun;
     private Canvas canvas;
@@ -14,6 +14,13 @@ public class Sunflower : MonoBehaviour
         { InvokeRepeating("Deployer", rate, rate); }
     }
 
+    private void Update()
+    {
+        if (hp <= 0f)
+        {
+            Destroy(this.gameObject);
+        }
+    }
     private void Deployer()
     {
         Instantiate(FlowerSun, this.gameObject.transform.position, new Quaternion(),canvas.transform);
