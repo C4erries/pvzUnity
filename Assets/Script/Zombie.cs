@@ -32,15 +32,12 @@ public class Zombie : mainzombie
     }
     private void OnCollisionStay2D(Collision2D col)
     {
-        Debug.Log("stay");
         if (col.gameObject.CompareTag("plant"))
         {
             stop = true;
             rb.velocity = Vector2.zero;
-            Debug.Log(Time.time-lastbite);
             if ((Time.time - lastbite) >= 0.4f)
             {
-                Debug.Log("Got it");
                 if (colr.color == Color.white)
                 {
                     colr.color = new Color(0.8f, 0.8f, 0.8f, 1f);

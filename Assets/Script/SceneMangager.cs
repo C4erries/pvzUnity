@@ -18,9 +18,9 @@ public class SceneMangager : MonoBehaviour
         card2.transform.position = new Vector3(170, 480, 0);
         GameObject card3 = Instantiate(CardWallNut, canvas.transform);
         card3.transform.position = new Vector3(240, 480, 0);
-        card1.tag = "Plant";
-        card2.tag = "Plant";
-        card3.tag = "Plant";
+        card1.tag = "ui";
+        card2.tag = "ui";
+        card3.tag = "ui";
 
     }
 

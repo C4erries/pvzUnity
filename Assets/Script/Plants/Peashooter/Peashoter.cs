@@ -6,17 +6,13 @@ using UnityEngine.Rendering.VirtualTexturing;
 public class Peashoter : mainplant
 {
     public GameObject peaBullet;
-    public Canvas canvas;
     public bool enemySeen = true;
     private Canvas canvas;
     private Transform trans;
     void Start()
     {
-<<<<<<< Updated upstream:Assets/Script/Peashoter.cs
         canvas = this.GetComponentInParent<Canvas>();
-=======
-        canvas = GetComponentInParent<Canvas>();
->>>>>>> Stashed changes:Assets/Script/Plants/Peashooter/Peashoter.cs
+
         { InvokeRepeating("Shoot", 0, 1.0f); }
     }
 
