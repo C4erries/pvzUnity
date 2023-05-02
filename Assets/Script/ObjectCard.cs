@@ -11,13 +11,12 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
     public Sprite plantCardSprite;
     public Sprite plantSprite;
     public float cost = 100f;
-    private Color bColor = new Color(0.5471698f, 0.5471698f, 0.5471698f, 1f);
-    private Color gColor = new Color(1f, 1f, 1f, 1f);
+    public float cooldown = 10f;
+    private bool isOnCooldown;
     private Canvas canvas;
     private float sunNow = 0f;
     private GameObject objectDragInstance;
     private GameManager gameManager;
-    private string tagName;
     private void Start()
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
@@ -30,18 +29,22 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
     private void FixedUpdate()
     {
         sunNow = SunWallet.sunCounter;
-        if(sunNow < cost)
+        if(isOnCooldown) 
         {
-            GetComponent<Image>().color = bColor;
+            GetComponent<Image>().color = new Color(0.2471698f, 0.2471698f, 0.3471698f, 1f); // isNotReadyClr
+        }
+        else if(sunNow < cost)
+        {
+            GetComponent<Image>().color = new Color(0.5471698f, 0.5471698f, 0.5471698f, 1f); // isHalfReadyClr
         }
         else
         {
-            GetComponent<Image>().color = gColor;
+            GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f); // isReadyClr
         }
     }
     public void OnDrag(PointerEventData eventData)
     {
-        if(sunNow >= cost)
+        if(sunNow >= cost && !isOnCooldown)
         {
             objectDragInstance.transform.position = Input.mousePosition;
         }
@@ -50,7 +53,7 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if(sunNow >= cost)
+        if(sunNow >= cost && !isOnCooldown)
         {
             objectDragInstance = Instantiate(object_Drag, canvas.transform);
             objectDragInstance.GetComponent<Image>().sprite = plantSprite;  
@@ -64,12 +67,22 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if(sunNow >= cost)
+        if (sunNow >= cost && !isOnCooldown)
         {
             gameManager.PlaceObject();
+            if(GameManager.instance.currentContainer != null) 
+            {
+                StartCoroutine(setCooldown());
+            }
             GameManager.instance.draggingObject = null;
             Destroy(objectDragInstance);
         }
         
+    }
+    public IEnumerator setCooldown()
+    {
+        isOnCooldown = true;
+        yield return new WaitForSeconds(cooldown);
+        isOnCooldown = false;
     }
 }

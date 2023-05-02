@@ -406,6 +406,7 @@ MonoBehaviour:
   objectCard: {fileID: 6650040262882512281, guid: 7e9784b4ec77f1142b29b82569b5345a, type: 3}
   CardPeashooter: {fileID: 6650040262882512281, guid: 6618ae1abf29c0647a5f4dc4dc4fc1fb, type: 3}
   CardSunflower: {fileID: 6650040262882512281, guid: 4b99268a7ef92e54b8a7062391d6bdcb, type: 3}
+  CardWallNut: {fileID: 6650040262882512281, guid: b60a41fd030be264e8ec996a6f8d3ff1, type: 3}
   canvas: {fileID: 953361084}
 --- !u!4 &266349033
 Transform:
@@ -1117,37 +1118,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &519855347
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 519855348}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Manager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &519855348
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519855347}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 440.62814, y: 284.50436, z: 6.004522}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &595977563
 PrefabInstance:
