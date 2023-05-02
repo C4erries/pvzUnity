@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class PeaBullet : MonoBehaviour
 {
-    public float speed = 1f;
-    public float damage = 10f;
-
-    void Update()
+    public float speed;
+    public float damage;
+    void FixedUpdate()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0f);
         if (GetComponent<Rigidbody2D>().transform.position.x >= 900)
@@ -22,8 +21,8 @@ public class PeaBullet : MonoBehaviour
     {
         if (col.gameObject.CompareTag("zombie"))
         {
+            col.gameObject.GetComponent<mainzombie>().hp -= 10;
             Destroy(this.gameObject);
-            col.gameObject.GetComponent<Zombie>().hp -= 10;
         }
     }
 }
