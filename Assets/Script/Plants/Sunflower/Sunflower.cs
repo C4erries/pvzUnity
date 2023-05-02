@@ -18,6 +18,7 @@ public class Sunflower : mainplant
     {
         if (hp <= 0f)
         {
+            GetComponentInParent<ObjectContainer>().isFull = false;
             Destroy(this.gameObject);
         }
     }
