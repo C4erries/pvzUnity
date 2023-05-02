@@ -174,4 +174,5 @@ MonoBehaviour:
   object_Game: {fileID: 3135083120413854738, guid: c3846b14573248842a0207748f6c9e46, type: 3}
   plantCardSprite: {fileID: 21300000, guid: ffb0d19a6656b4740b6c1e54fb69a7b3, type: 3}
   plantSprite: {fileID: 21300000, guid: 0fcea94a061a68f49a5c190b3974bb77, type: 3}
-  Cost: 100
+  cost: 100
+  cooldown: 2

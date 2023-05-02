@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4846073519679195655}
   - component: {fileID: 3397252806062968672}
   m_Layer: 5
-  m_Name: CardSunflower
+  m_Name: CardWallNut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,8 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object_Drag: {fileID: 3135083120413854738, guid: d93756adeb92fbc4daee9bde1c5f35f9, type: 3}
-  object_Game: {fileID: 3135083120413854738, guid: 34728208275166849bc81624c9082ff2, type: 3}
-  plantCardSprite: {fileID: 21300000, guid: 3a583b3b38c5da343b79af7cd6f7c960, type: 3}
-  plantSprite: {fileID: 21300000, guid: db4b3382d026e7a4f96b816882e0d682, type: 3}
-  cost: 50
-  cooldown: 5
+  object_Game: {fileID: 3135083120413854738, guid: e043f67d43b357e4e980466cc4610b3c, type: 3}
+  plantCardSprite: {fileID: 21300000, guid: 1e5a6cde1f8650e449ee7977bcd58e19, type: 3}
+  plantSprite: {fileID: 21300000, guid: f24647f595161384a9bc04a9267fd68c, type: 3}
+  cost: 100
+  cooldown: 10
