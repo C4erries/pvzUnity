@@ -7,6 +7,12 @@ TagManager:
   - zombie
   - bg
   - dragplant
+<<<<<<< Updated upstream
+=======
+  - Manager
+  - bullet
+  - plant
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
